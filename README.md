@@ -1,4 +1,4 @@
-# The Minimal theme for my CV site (Fork from https://github.com/pages-themes/minimal)
+# [Fork The Minimal theme](https://github.com/pages-themes/minimal) for my CV site
 
 The main differense is left block:
 * Added mail-to

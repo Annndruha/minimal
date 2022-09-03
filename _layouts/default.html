@@ -24,6 +24,11 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+        {% if site.show_info %}
+        <p>• Age: {{ site.age }}</p>
+        <p>• Location: {{ site.location }}</p>
+        <p>• Language: {{ site.language }}</p>
+        {% endif %}
 
         {% if site.show_contacts %}
         <ul class="contacts">

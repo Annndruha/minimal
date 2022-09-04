@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ site.favicon }}">
     <title>{{ site.title }}</title>
-    contact_mail.png
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -25,8 +24,6 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
         {% if site.show_info %}
         <div>
           <p><span class="material-symbols-outlined">face</span> Age: {{ site.age }}</p>
@@ -36,7 +33,6 @@
         {% endif %}
 
         {% if site.show_contacts %}
-        <div><p>Test contacts</p></div>
         <ul class="contacts">
           <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
           <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ site.favicon }}">
+    <title>{{ site.title }}</title>
+    contact_mail.png
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -26,10 +29,9 @@
 
         {% if site.show_info %}
         <div>
-          <p>• Age: {{ site.age }}</p>
-          <p>• Location: {{ site.location }}</p>
-          <span class="material-symbols-outlined">settings</span>
-          <p>• Language: {{ site.language }}</p>
+          <p><span class="material-symbols-outlined">face</span> Age: {{ site.age }}</p>
+          <p><span class="material-symbols-outlined">location_on</span> Location: {{ site.location }}</p>
+          <p><span class="material-symbols-outlined">language</span> Language: {{ site.language }}</p>
         </div>
         {% endif %}
 
@@ -48,10 +50,6 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>Footer big</p>
-        {% endif %}
-        <p><small>footer small</small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

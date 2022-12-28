@@ -1,6 +1,6 @@
 # [Fork from The Minimal theme](https://github.com/pages-themes/minimal) for my CV site
 
-# Changes from [original repo](https://github.com/pages-themes/minimal)
+# Changes from original repo:
 
 * Left-side changed to resume-style block
 

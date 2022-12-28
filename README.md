@@ -17,7 +17,7 @@ logo: /assets/images/photo.png
 
 show_info: true
 age: 23 y.o.
-location: Sirius, Russia
+location: Russia
 language: Russian, English
 
 show_contacts: true

@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ site.favicon }}">
     <title>{{ site.fullname }}</title>
-
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
     {% include head-custom.html %}
   </head>
   <body>
@@ -25,9 +21,9 @@
 
         {% if site.show_info %}
         <div>
-          <p><span class="material-symbols-outlined">face</span> Age: {{ site.age }}</p>
-          <p><span class="material-symbols-outlined">location_on</span> Location: {{ site.location }}</p>
-          <p><span class="material-symbols-outlined">language</span> Language: {{ site.language }}</p>
+          <div style="display: flex; flex-direction: row"><span class="material-symbols-outlined">face</span> Age: {{ site.age }}</div>
+          <div style="display: flex; flex-direction: row"><span class="material-symbols-outlined">location_on</span> Location: {{ site.location }}</div>
+            <div style="display: flex; flex-direction: row"><span class="material-symbols-outlined">language</span> Language: {{ site.language }}</div>
         </div>
         {% endif %}
 

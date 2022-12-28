@@ -8,7 +8,6 @@
     <title>{{ site.fullname }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
@@ -21,9 +20,9 @@
 
         {% if site.show_info %}
         <div>
-          <div style="display: flex; flex-direction: row; padding: 5px;"><span class="material-symbols-outlined">face</span> Age: {{ site.age }}</div>
-          <div style="display: flex; flex-direction: row; padding: 5px;"><span class="material-symbols-outlined">location_on</span> Location: {{ site.location }}</div>
-            <div style="display: flex; flex-direction: row; padding: 5px;"><span class="material-symbols-outlined">language</span> Language: {{ site.language }}</div>
+          <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">face</span>Age: {{ site.age }}</div>
+          <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">location_on</span>Location: {{ site.location }}</div>
+            <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">language</span>Language: {{ site.language }}</div>
         </div>
         {% endif %}
 
@@ -36,9 +35,7 @@
         {% endif %}
       </header>
       <section>
-
       {{ content }}
-
       </section>
       <footer>
       </footer>

@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ site.favicon }}">
     <title>{{ site.fullname }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+    <link rel="stylesheet" href="{{ "
+    /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
         <h1>{{ site.fullname | default: site.github.repository_name }}</h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        <img src="{{site.logo | relative_url}}" alt="Logo"/>
         {% endif %}
 
         {% if site.show_info %}
         <div>
-          <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">face</span>Age: {{ site.age }}</div>
-          <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">location_on</span>Location: {{ site.location }}</div>
-            <div style="display: flex; flex-direction: row; padding: 5px 10px 5px 5px;"><span class="material-symbols-outlined">language</span>Language: {{ site.language }}</div>
+            <div style="display: flex; flex-direction: row;">
+                <span class="material-symbols-outlined">face</span>
+                <span style="padding-left:5px; padding-top:2px;">Age: {{ site.age }}</span>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <span class="material-symbols-outlined">location_on</span>
+                <span style="padding-left:5px; padding-top:2px;">Location: {{ site.location }}</span>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <span class="material-symbols-outlined">language</span>
+                <span style="padding-left:5px; padding-top:2px;">Language: {{ site.language }}</span>
+            </div>
         </div>
         {% endif %}
 
         {% if site.show_contacts %}
         <ul class="contacts">
-          <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
-          <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
-          <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
+            <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
+            <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
+            <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
         </ul>
         {% endif %}
-      </header>
-      <section>
-      {{ content }}
-      </section>
-      <footer>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+    </header>
+    <section>
+        {{ content }}
+    </section>
+    <footer>
+    </footer>
+</div>
+<script src="{{ "
+/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
 </html>

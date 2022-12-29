@@ -4,7 +4,7 @@
 
 * Left-side changed to resume-style block
 
-  ![image](https://user-images.githubusercontent.com/51162917/188296433-97852647-6c34-4544-80d8-b1b2aac0524d.png)
+  ![img.png](assets/readme.png)
 
 * Ability to add your site favicon
 

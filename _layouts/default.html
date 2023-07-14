@@ -18,30 +18,32 @@
         {% endif %}
         
         <div  style="display: flex; flex-direction: row; justify-content: center;">
-        {% if site.show_info %}
-        <div>
-            <div style="display: flex; flex-direction: row; padding-bottom:5px;">
-                <span class="material-symbols-outlined">face</span>
-                <span style="padding-left:5px; padding-top:2px;">Age: {{ site.age }}</span>
-            </div>
-            <div style="display: flex; flex-direction: row; padding-bottom:5px;">
-                <span class="material-symbols-outlined">location_on</span>
-                <span style="padding-left:5px; padding-top:2px;">Location: {{ site.location }}</span>
-            </div>
-            <div style="display: flex; flex-direction: row; padding-bottom:8px;">
-                <span class="material-symbols-outlined">language</span>
-                <span style="padding-left:5px; padding-top:2px;">Language: {{ site.language }}</span>
-            </div>
-        </div>
-        {% endif %}
+            <div  style="display: flex; flex-direction: column;">
+                    {% if site.show_info %}
+                    <div>
+                        <div style="display: flex; flex-direction: row; padding-bottom:5px;">
+                            <span class="material-symbols-outlined">face</span>
+                            <span style="padding-left:5px; padding-top:2px;">Age: {{ site.age }}</span>
+                        </div>
+                        <div style="display: flex; flex-direction: row; padding-bottom:5px;">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span style="padding-left:5px; padding-top:2px;">Location: {{ site.location }}</span>
+                        </div>
+                        <div style="display: flex; flex-direction: row; padding-bottom:8px;">
+                            <span class="material-symbols-outlined">language</span>
+                            <span style="padding-left:5px; padding-top:2px;">Language: {{ site.language }}</span>
+                        </div>
+                    </div>
+                    {% endif %}
 
-        {% if site.show_contacts %}
-        <ul class="contacts" style="padding-top:10px;">
-            <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
-            <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
-            <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
-        </ul>
-        {% endif %}
+                    {% if site.show_contacts %}
+                    <ul class="contacts" style="padding-top:10px;">
+                        <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
+                        <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
+                        <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
+                    </ul>
+                    {% endif %}
+                </div>
         </div>
     </header>
     <section>

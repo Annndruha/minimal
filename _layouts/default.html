@@ -13,11 +13,11 @@
 <div class="wrapper">
     <header>
         <h1>{{ site.fullname | default: site.github.repository_name }}</h1>
-
         {% if site.logo %}
         <img src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
         {% endif %}
-
+        
+        <div  style="display: flex; flex-direction: row; justify-content: center;">
         {% if site.show_info %}
         <div>
             <div style="display: flex; flex-direction: row; padding-bottom:5px;">
@@ -42,6 +42,7 @@
             <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
         </ul>
         {% endif %}
+        </div>
     </header>
     <section>
         {{ content }}

@@ -52,16 +52,20 @@
                     {% endif %}
 
                     {% if site.show_contacts %}
-                    <ul class="contacts" style="padding-top:10px;">
-                        <li><a href="{{ site.mailto }}">Send me <strong>Mail</strong></a></li>
-                        <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
-                        <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
-                    </ul>
-                    <ul class="second_contacts" style="padding-top:10px;">
-                        <li><a href="{{ site.second_mailto }}">Send me <strong>Mail</strong></a></li>
-                        <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
-                        <li><a href="{{ site.second_cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
-                    </ul>
+                    <div>
+                        <ul class="contacts" style="padding-top:10px;">
+                            <li>{{ site.bt_mailto }}</li>
+                            <li>{{ site.bt_github }}</li>
+                            <li>{{ site.bt_pdf }}</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="second_contacts" style="padding-top:10px;">
+                            <li>{{ site.second_bt_mailto }}</li>
+                            <li>{{ site.second_bt_github }}</li>
+                            <li>{{ site.second_bt_pdf }}</li>
+                        </ul>
+                    </div>
                     {% endif %}
                 </div>
         </div>

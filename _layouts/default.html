@@ -8,6 +8,7 @@
     <title>{{ site.fullname }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link href="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -53,14 +54,14 @@
 
                     {% if site.show_contacts %}
                     <div>
-                        <ul class="contacts" style="padding-top:10px;">
+                        <ul id="contacts" class="contacts" style="padding-top:10px;">
                             <li>{{ site.bt_mailto }}</li>
                             <li>{{ site.bt_github }}</li>
                             <li>{{ site.bt_pdf }}</li>
                         </ul>
                     </div>
                     <div>
-                        <ul class="second_contacts" style="padding-top:10px;">
+                        <ul id="second_contacts" class="contacts" style="padding-top:10px;">
                             <li>{{ site.second_bt_mailto }}</li>
                             <li>{{ site.second_bt_github }}</li>
                             <li>{{ site.second_bt_pdf }}</li>
@@ -79,7 +80,8 @@
     <footer>
     </footer>
 </div>
-<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/language.js" | relative_url }}"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/language.js" | relative_url }}"></script>
 </body>
 </html>

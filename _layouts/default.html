@@ -12,7 +12,8 @@
 <body>
 <div class="wrapper">
     <header>
-        <h1>{{ site.fullname | default: site.github.repository_name }}</h1>
+        <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>
+        <h1 id="fullname_second">{{ site.fullname_second | default: site.github.repository_name }}</h1>
         {% if site.logo %}
         <img src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
         {% endif %}
@@ -20,18 +21,32 @@
         <div  style="display: flex; flex-direction: row; justify-content: center;">
             <div  style="display: flex; flex-direction: column;">
                     {% if site.show_info %}
-                    <div>
+                    <div id="info">
                         <div style="display: flex; flex-direction: row; padding-bottom:5px;">
                             <span class="material-symbols-outlined">face</span>
-                            <span style="padding-left:5px; padding-top:2px;">Age: {{ site.age }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.age }}</span>
                         </div>
                         <div style="display: flex; flex-direction: row; padding-bottom:5px;">
                             <span class="material-symbols-outlined">location_on</span>
-                            <span style="padding-left:5px; padding-top:2px;">Location: {{ site.location }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.location }}</span>
                         </div>
                         <div style="display: flex; flex-direction: row; padding-bottom:8px;">
                             <span class="material-symbols-outlined">language</span>
-                            <span style="padding-left:5px; padding-top:2px;">Language: {{ site.language }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.language }}</span>
+                        </div>
+                    </div>
+                    <div id="info_second">
+                        <div style="display: flex; flex-direction: row; padding-bottom:5px;">
+                            <span class="material-symbols-outlined">face</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.age_second }}</span>
+                        </div>
+                        <div style="display: flex; flex-direction: row; padding-bottom:5px;">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.location_second }}</span>
+                        </div>
+                        <div style="display: flex; flex-direction: row; padding-bottom:8px;">
+                            <span class="material-symbols-outlined">language</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.language_second }}</span>
                         </div>
                     </div>
                     {% endif %}
@@ -42,11 +57,19 @@
                         <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
                         <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
                     </ul>
+                    <ul class="contacts_second" style="padding-top:10px;">
+                        <li><a href="{{ site.mailto_second }}">Send me <strong>Mail</strong></a></li>
+                        <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
+                        <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
+                    </ul>
                     {% endif %}
                 </div>
         </div>
     </header>
-    <section>
+    <section id="content">
+        {{ content }}
+    </section>
+    <section id="content_second">
         {{ content }}
     </section>
     <footer>

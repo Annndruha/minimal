@@ -13,7 +13,7 @@
 <div class="wrapper">
     <header>
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>
-        <h1 id="fullname_second">{{ site.fullname_second | default: site.github.repository_name }}</h1>
+        <h1 id="second_fullname">{{ site.second_fullname | default: site.github.repository_name }}</h1>
         {% if site.logo %}
         <img src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
         {% endif %}
@@ -35,18 +35,18 @@
                             <span style="padding-left:5px; padding-top:2px;">{{ site.language }}</span>
                         </div>
                     </div>
-                    <div id="info_second">
+                    <div id="second_info">
                         <div style="display: flex; flex-direction: row; padding-bottom:5px;">
                             <span class="material-symbols-outlined">face</span>
-                            <span style="padding-left:5px; padding-top:2px;">{{ site.age_second }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.second_age }}</span>
                         </div>
                         <div style="display: flex; flex-direction: row; padding-bottom:5px;">
                             <span class="material-symbols-outlined">location_on</span>
-                            <span style="padding-left:5px; padding-top:2px;">{{ site.location_second }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.second_location }}</span>
                         </div>
                         <div style="display: flex; flex-direction: row; padding-bottom:8px;">
                             <span class="material-symbols-outlined">language</span>
-                            <span style="padding-left:5px; padding-top:2px;">{{ site.language_second }}</span>
+                            <span style="padding-left:5px; padding-top:2px;">{{ site.second_language }}</span>
                         </div>
                     </div>
                     {% endif %}
@@ -57,10 +57,10 @@
                         <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
                         <li><a href="{{ site.cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
                     </ul>
-                    <ul class="contacts_second" style="padding-top:10px;">
-                        <li><a href="{{ site.mailto_second }}">Send me <strong>Mail</strong></a></li>
+                    <ul class="second_contacts" style="padding-top:10px;">
+                        <li><a href="{{ site.second_mailto }}">Send me <strong>Mail</strong></a></li>
                         <li><a href="{{ site.github.owner_url }}">Profile <strong>GitHub</strong></a></li>
-                        <li><a href="{{ site.cv_pdf_link_second }}">Download <strong>CV PDF</strong></a></li>
+                        <li><a href="{{ site.second_cv_pdf_link }}">Download <strong>CV PDF</strong></a></li>
                     </ul>
                     {% endif %}
                 </div>
@@ -69,7 +69,7 @@
     <section id="content">
         {{ content }}
     </section>
-    <section id="content_second">
+    <section id="second_content">
         {{ content }}
     </section>
     <footer>

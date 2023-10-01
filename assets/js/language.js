@@ -2,22 +2,21 @@ let searchParams = new URLSearchParams(window.location.search)
 if (searchParams.has('lang'))
 {
     let lang = searchParams.get('lang')
-    change_language(lang)
-}
-
-
-function change_language(lang) {
     if (lang === "en" || lang === "main") {
         console.log('Now set main language')
         set_main_langugage()
     }
     else if (lang === "ru" || lang === "second") {
         console.log('Now set second language')
+        set_second_langugage()
     }
     else {
         console.log('Unknown language in URL params. Set main language')
         set_main_langugage()
     }
+}
+else {
+    set_main_langugage()
 }
 
 function set_main_langugage(){

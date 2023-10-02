@@ -9,4 +9,4 @@
 
 
 
-## This is just a resume-theme, if you want you own web resume, check **[THIS REPO](https://github.com/Annndruha/annndruha.github.io)**
+## This is just a resume-theme, if you want you own web resume, check **[THIS REPOSITORY](https://github.com/Annndruha/annndruha.github.io)**

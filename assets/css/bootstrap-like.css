@@ -11,3 +11,10 @@ body {
 .wrapper {
     padding: 10px;
 }
+
+:target::before {
+  content: "";
+  display: block;
+  height: 62px;
+  margin: -62px 0 0;
+}

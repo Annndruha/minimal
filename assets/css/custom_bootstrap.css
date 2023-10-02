@@ -173,6 +173,11 @@ th {
     -webkit-tap-highlight-color: transparent;
 }
 
+img,
+svg {
+  vertical-align: middle;
+}
+
 label {
   display: inline-block;
 }
@@ -3149,9 +3154,6 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
-}
-.navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
 }
 
 .navbar-nav {

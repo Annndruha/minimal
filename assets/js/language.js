@@ -1,4 +1,6 @@
 let searchParams = new URLSearchParams(window.location.search)
+$("#to_main_lang").attr('value', $('meta[name="main_language_code"]').attr("content").toUpperCase())
+$("#to_second_lang").attr('value', $('meta[name="second_language_code"]').attr("content").toUpperCase())
 if (searchParams.has('lang'))
 {
     let lang = searchParams.get('lang')

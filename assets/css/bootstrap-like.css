@@ -7,3 +7,7 @@ body {
     position: fixed;
     width: 100%;
 }
+
+.wrapper {
+    margin: 8px;
+}

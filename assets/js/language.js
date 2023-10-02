@@ -19,8 +19,8 @@ else {
     set_main_langugage()
 }
 
-$("to_main_lang_href").attr("href", $('meta[name="main_language_code"]').attr("content"))
-$("#to_second_lang_href").attr("href", $('meta[name="second_language_code"]').attr("content"))
+$("to_main_lang_href").attr("href", "?lang=" + $('meta[name="main_language_code"]').attr("content"))
+$("#to_second_lang_href").attr("href", "?lang=" +  $('meta[name="second_language_code"]').attr("content"))
 
 function set_main_langugage(){
     $("#fullname").css("display", "block")

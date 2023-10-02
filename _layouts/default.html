@@ -48,11 +48,12 @@
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>
         <h1 id="second_fullname">{{ site.second_fullname | default: site.github.repository_name }}</h1>
         {% if site.logo %}
-        <img src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
+        <img class="branding_icon" src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
         {% endif %}
 
         <div style="display: flex; flex-direction: row; justify-content: center;">
             <div style="display: flex; flex-direction: column;">
+                <div>
                 {% if site.show_info %}
                 <div id="info">
                     <div style="display: flex; flex-direction: row; padding-bottom:5px;">
@@ -100,6 +101,7 @@
                     </ul>
                 </div>
                 {% endif %}
+                </div>
             </div>
         </div>
     </header>

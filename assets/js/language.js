@@ -9,6 +9,7 @@ else {
 }
 
 if ($('meta[name="show_branding"]').attr("content") ==='true'){
+    $(".wrapper").css("padding-top", "80px")
     $("#to_main_lang").text($('meta[name="main_language_code"]').attr("content").toUpperCase())
     $("#to_second_lang").text($('meta[name="second_language_code"]').attr("content").toUpperCase())
     $("#to_main_lang").on("click", () => {

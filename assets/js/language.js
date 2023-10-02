@@ -25,14 +25,14 @@ function set_main_langugage(){
     $("#content").css("display", "block")
     $("#contacts").css("display", "block")
     $("#fullname").css("display", "block")
-    // $("#title_fullname")
 
     $("#second_fullname").css("display", "none")
     $("#second_info").css("display", "none")
     $("#second_content").css("display", "none")
     $("#second_contacts").css("display", "none")
     $("#second_fullname").css("display", "none")
-    // $("#title_second_fullname")
+
+    document.title = $('meta[name="fullname"]').attr("content")
 }
 
 function set_second_langugage(){
@@ -41,12 +41,12 @@ function set_second_langugage(){
     $("#content").css("display", "none")
     $("#contacts").css("display", "none")
     $("#fullname").css("display", "none")
-    // $("#title_fullname")
 
     $("#second_fullname").css("display", "block")
     $("#second_info").css("display", "block")
     $("#second_content").css("display", "block")
     $("#second_contacts").css("display", "block")
     $("#second_fullname").css("display", "block")
-    // $("#title_second_fullname")
+    
+    document.title = $('meta[name="second_fullname"]').attr("content")
 }

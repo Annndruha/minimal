@@ -18,7 +18,6 @@
     <link href="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
-{% if site.show_branding %}
 <nav class="navbar navbar-light bg-light sticky-top px-3 mb-3" style="margin-bottom: 0">
     <a class="navbar-brand">
         <img src="{{ site.branding_favicon }}" width="40" height="40" alt="" style="padding-right: 1px; padding-bottom: 3px;"
@@ -40,7 +39,6 @@
         </li>
     </ul>
 </nav>
-{% endif %}
 <div class="wrapper">
     <header>
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>

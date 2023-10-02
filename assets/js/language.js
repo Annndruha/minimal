@@ -9,15 +9,14 @@ else {
 }
 
 if ($('meta[name="show_branding"]').attr("content") ==='true'){
+    $(document.body).css('padding', '50px')
     $("#to_main_lang").text($('meta[name="main_language_code"]').attr("content").toUpperCase())
     $("#to_second_lang").text($('meta[name="second_language_code"]').attr("content").toUpperCase())
-
     $("#to_main_lang").on("click", () => {
-    let lang = $('meta[name="main_language_code"]').attr("content")
-    change_uri(lang)
-    change_language(lang)
+        let lang = $('meta[name="main_language_code"]').attr("content")
+        change_uri(lang)
+        change_language(lang)
     })
-
     $("#to_second_lang").on("click", () => {
         let lang = $('meta[name="second_language_code"]').attr("content")
         change_uri(lang)

@@ -2,11 +2,11 @@ let searchParams = new URLSearchParams(window.location.search)
 if (searchParams.has('lang'))
 {
     let lang = searchParams.get('lang')
-    if (lang === "en" || lang === "main") {
+    if (lang === $('meta[name="main_language_code"]').attr("content") || lang === "main") {
         console.log('Now set main language')
         set_main_langugage()
     }
-    else if (lang === "ru" || lang === "second") {
+    else if (lang === $('meta[name="second_language_code"]').attr("content") || lang === "second") {
         console.log('Now set second language')
         set_second_langugage()
     }
@@ -18,6 +18,9 @@ if (searchParams.has('lang'))
 else {
     set_main_langugage()
 }
+
+$("to_main_lang_href").attr("href", $('meta[name="main_language_code"]').attr("content"))
+$("#to_second_lang_href").attr("href", $('meta[name="second_language_code"]').attr("content"))
 
 function set_main_langugage(){
     $("#fullname").css("display", "block")

@@ -18,6 +18,29 @@
     <link href="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
+{% if site.show_branding %}
+<nav class="navbar navbar-light bg-light sticky-top px-3 mb-3" style="margin-bottom: 0">
+    <a class="navbar-brand">
+        <img src="{{ site.branding_favicon }}" width="40" height="40" alt="" style="padding-right: 1px; padding-bottom: 3px;"
+        draggable="false">
+        {{ site.branding_link }}
+    </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item d-flex justify-content-center px-1">
+            <img src="./language.svg" class="img-fluid rounded-circle"
+                 style="width: 20px;"
+                 draggable="false"
+                 alt="Change language">
+        </li>
+        <li class="nav-item">
+            <div class="d-flex flex-col justify-content-center">
+                <button style="display: none;" id="to_main_lang" type="button" class="btn btn-light">{{ site.main_language_code }}</button>
+                <button id="to_second_lang" type="button" class="btn btn-light">{{ site.second_language_code }}</button>
+            </div>
+        </li>
+    </ul>
+</nav>
+{% endif %}
 <div class="wrapper">
     <header>
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>

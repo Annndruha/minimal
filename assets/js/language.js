@@ -9,7 +9,6 @@ else {
 }
 
 if ($('meta[name="show_branding"]').attr("content") ==='true'){
-    $(document.body).css('padding', '50px')
     $("#to_main_lang").text($('meta[name="main_language_code"]').attr("content").toUpperCase())
     $("#to_second_lang").text($('meta[name="second_language_code"]').attr("content").toUpperCase())
     $("#to_main_lang").on("click", () => {
@@ -24,6 +23,7 @@ if ($('meta[name="show_branding"]').attr("content") ==='true'){
     })
 }
 else {
+    $(document.body).css('padding', '50px')
     $("#to_main_lang_href").attr("href", "?lang=" + $('meta[name="main_language_code"]').attr("content"))
     $("#to_second_lang_href").attr("href", "?lang=" +  $('meta[name="second_language_code"]').attr("content"))
 }

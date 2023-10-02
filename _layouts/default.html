@@ -16,11 +16,9 @@
     <meta name="show_branding" content="{{ site.show_branding }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/custom_bootstrap.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" href="{{ "/assets/css/bootstrap-like.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link href="https://code.jquery.com/jquery-3.6.1.min.js"
-          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+    <link href="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
 </head>
 <body>
     {% if site.show_branding %}
@@ -50,7 +48,7 @@
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>
         <h1 id="second_fullname">{{ site.second_fullname | default: site.github.repository_name }}</h1>
         {% if site.logo %}
-        <img src="{{site.logo | relative_url}}" style="border-radius: 50%;" draggable="false" alt="My Photo"/>
+        <img src="{{site.logo | relative_url}}" style="border-radius: 50%; width: 270px; height: 280px;" draggable="false" alt="My Photo"/>
         {% endif %}
 
         <div style="display: flex; flex-direction: row; justify-content: center;">
@@ -88,14 +86,14 @@
 
                 {% if site.show_contacts %}
                 <div>
-                    <ul id="bt_contacts" class="contacts" style="padding-top:10px;">
+                    <ul id="bt_contacts" class="contacts">
                         <li>{{ site.bt_mailto }}</li>
                         <li>{{ site.bt_github }}</li>
                         <li>{{ site.bt_pdf }}</li>
                     </ul>
                 </div>
                 <div>
-                    <ul id="bt_second_contacts" class="contacts" style="padding-top:10px;">
+                    <ul id="bt_second_contacts" class="contacts">
                         <li>{{ site.second_bt_mailto }}</li>
                         <li>{{ site.second_bt_github }}</li>
                         <li>{{ site.second_bt_pdf }}</li>

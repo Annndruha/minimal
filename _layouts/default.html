@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap-like.css?v=" | append: site.github.build_revision | relative_url }}">
     <link href="https://code.jquery.com/jquery-3.6.1.min.js"
           integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
 </head>
 <body>
-<div class="wrapper">
     {% if site.show_branding %}
     <nav class="navbar navbar-light bg-light sticky-top px-3 mb-3" style="margin-bottom: 0">
         <a class="navbar-brand">
@@ -46,6 +46,7 @@
         </ul>
     </nav>
     {% endif %}
+<div class="wrapper">
     <header>
         <h1 id="fullname">{{ site.fullname | default: site.github.repository_name }}</h1>
         <h1 id="second_fullname">{{ site.second_fullname | default: site.github.repository_name }}</h1>

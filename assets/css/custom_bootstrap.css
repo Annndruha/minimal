@@ -10182,4 +10182,8 @@ textarea.form-control-lg {
   }
 }
 
+.font_fix {
+    font-family: var(--bs-body-font-family);
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
